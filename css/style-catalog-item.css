@@ -137,19 +137,6 @@ h2 {
  }
 
 
-
-.clearfix::after {
-	content: "";
-	display:table;
-	clear: both;
-}
-/*}
-.clearfix {
-	height: 0px;
-	clear:both;
-
-}*/
-
 .item-gallery-content {
 	margin-bottom: 30px;
 	margin-right:40px;
@@ -173,10 +160,11 @@ h2 {
 }
 
 .catalog-items {
-	 width: 220px;
- 	 min-height: 287px;
+	/* width: 220px;
+ 	 min-height: 287px;*/
 	display:inline-block;
 	vertical-align: top;
+	width: calc(33% - 20px);
 	margin-right: 10px;
 }
 
@@ -222,6 +210,7 @@ h2 {
 }
 
 .main-footer {
+   margin-top:65px;
   padding-top: 60px;
   padding-bottom: 40px;
   background: rgba(0, 0, 0, 0.1);
@@ -229,27 +218,32 @@ h2 {
 }
 
 .footer-contacts {
+/*	float: left;*/
 	background: rgba(0, 0, 0, 0.1);
     border:  5px solid green;
 	min-height: 90px;
   	width: 320px;
-  	margin-right: 60px;
-  	margin-right: 60px;
+
+  /*	margin-right: 60px;*/
 }
 
 .footer-social {
 	min-height: 90px;
-	display: inline-block;
   	width: 180px;
-  	margin-left: 550px;
   	background: rgba(0, 0, 0, 0.1);
     border:  5px solid purple;
   }
 
+section {
+	display: inline-block;
+	vertical-align: top;
+	margin-right:90px;
+}
+
 .footer-copyright {
-	max-height: 90px;	
+	min-height: 90px;	
   	width: 180px;
-  	float: right;
+  /*	float: right;*/
   	background: rgba(0, 0, 0, 0.1);
     border:  5px solid green;
 }
@@ -259,13 +253,17 @@ h2 {
 	margin-top:50px;
 	margin-left:130px;
 	background: rgba(0, 0, 0, 0.1);
-    border:  5px solid green;
+     outline: 5px solid green;
 
 }
 
 .pagination-items {
+	float:right;
 	width:196px;
 	height: 48px;
-	background: rgba(0, 0, 0, 0.1);
+	margin-right: 498px;
+	bottom:49px;
+	top:49px;
     border:  5px solid black;
+    margin-top: 47px;
 }
